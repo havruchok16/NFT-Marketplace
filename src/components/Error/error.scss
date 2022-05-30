@@ -1,0 +1,21 @@
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 100px 0 50px 0;
+    &_anim{
+        height: 350px;
+    }
+    &_text{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 10px;
+        color: white;
+    }
+}
+
+.btn_error{
+    margin-top: 20px;
+}

@@ -1,0 +1,136 @@
+
+.btn{
+    background-color: transparent;
+    width: max-content;
+    padding: 6px 50px;
+    border: 2px solid #F4A937;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    &:hover{
+        background-color: #F4A937;
+        transition: 0.5s;
+    }
+}
+
+.arts_info{
+    margin: 120px 20px 50px 200px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    &_img{
+        width: 350px;
+        height: 480px;
+        background-image: cover;
+    }
+    &_container{
+        margin-left: 100px;
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        .name{
+            color: white;
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+    .about{
+        font-size: 18px;
+        margin: 50px 0;
+    }
+}
+
+.some_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .category{
+        @extend .btn;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    .llikes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .like{
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            background-image: url(../../img/heart.png);
+            transition: 0.5s;
+            &:hover{
+                background-image: url(../../img/heartHover.png);
+                transition: 0.5s;
+            }
+        }
+        .likes{
+            font-size: 16px;
+        }
+    }
+    
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    p{
+        margin: 0;
+        text-align: left;
+    }
+    .bold{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .normal{
+        margin-top: 6px;
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+    .arts_info{
+        margin: 120px 20px 50px 120px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .arts_info{
+        margin: 120px 20px 50px 50px;
+        &_container{
+            margin-left: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .arts_info{
+        &_container{
+            max-width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .arts_info{
+        &_container{
+            max-width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .arts_info{
+        margin: 80px 20px 50px 20px;
+        flex-direction: column;
+        align-items: center;
+        &_container{
+            margin-left: 0;
+        }
+    }
+}

@@ -1,0 +1,184 @@
+.btn, .some_container .category {
+  background-color: transparent;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 6px 50px;
+  border: 2px solid #F4A937;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn:hover, .some_container .category:hover {
+  background-color: #F4A937;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.arts_info {
+  margin: 120px 20px 50px 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+}
+
+.arts_info_img {
+  width: 350px;
+  height: 480px;
+  background-image: cover;
+}
+
+.arts_info_container {
+  margin-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+}
+
+.arts_info_container .name {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.arts_info .about {
+  font-size: 18px;
+  margin: 50px 0;
+}
+
+.some_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.some_container .category {
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.some_container .llikes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.some_container .llikes .like {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-image: url(../../img/heart.png);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.some_container .llikes .like:hover {
+  background-image: url(../../img/heartHover.png);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.some_container .llikes .likes {
+  font-size: 16px;
+}
+
+.cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cont p {
+  margin: 0;
+  text-align: left;
+}
+
+.cont .bold {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cont .normal {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1300px) {
+  .arts_info {
+    margin: 120px 20px 50px 120px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .arts_info {
+    margin: 120px 20px 50px 50px;
+  }
+  .arts_info_container {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .arts_info_container {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .arts_info_container {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .arts_info {
+    margin: 80px 20px 50px 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .arts_info_container {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=artsinfo.css.map */

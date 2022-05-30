@@ -1,0 +1,129 @@
+.arts_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px 80px;
+}
+
+.arts_item {
+  width: 330px;
+  height: 450px;
+  margin: 20px 30px;
+  border-radius: 4px;
+  color: white;
+  background-size: cover;
+}
+
+.arts_item .info {
+  margin-top: 310px;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 140px;
+  padding: 0 20px;
+}
+
+.arts_item .info .name {
+  font-size: 18px;
+  margin: 16px 0;
+}
+
+.arts_item .info .info_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.arts_item .info .info_container .price {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.arts_item .info .info_container .like {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-image: url(../../img/heart.png);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.arts_item .info .info_container .like:hover {
+  background-image: url(../../img/heartHover.png);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.arts_item .info .info_container .likes {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 2px;
+}
+
+.arts_item .info .info_container .buy {
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.arts_item .info .info_container .buy:hover {
+  color: #F4A937;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1300px) {
+  .arts_list {
+    margin: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .arts_list {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .arts_item {
+    width: 330px;
+    height: 450px;
+    margin: 20px 10px;
+  }
+}
+/*# sourceMappingURL=arts.css.map */

@@ -1,0 +1,64 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    height: 100px;
+    color: white;
+    font-weight: 200;
+    flex: 0 0 auto;
+    span{
+        font-weight: 500;
+    }
+    .logo{
+        background-image: url(../../img/logo.png);
+        width: 112px;
+        height: 32px;
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        &_yt{
+            background-image: url(../../img/youtube.png);
+            width: 30px;
+            height: 23px;
+        }
+        &_fb{
+            background-image: url(../../img/facebook.png);
+            width: 18px;
+            height: 30px;
+            margin: 0 20px;
+        }
+        &_tw{
+            background-image: url(../../img/twitter.png);
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer{
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .nav_logo{
+            display: none;
+        }
+        .social{
+            margin: 20px 0;
+        }
+
+    }
+}

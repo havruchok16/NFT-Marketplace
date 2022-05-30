@@ -1,0 +1,97 @@
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 100px;
+  height: 100px;
+  color: white;
+  font-weight: 200;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.footer span {
+  font-weight: 500;
+}
+
+.footer .logo {
+  background-image: url(../../img/logo.png);
+  width: 112px;
+  height: 32px;
+}
+
+.footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.footer .social_yt {
+  background-image: url(../../img/youtube.png);
+  width: 30px;
+  height: 23px;
+}
+
+.footer .social_fb {
+  background-image: url(../../img/facebook.png);
+  width: 18px;
+  height: 30px;
+  margin: 0 20px;
+}
+
+.footer .social_tw {
+  background-image: url(../../img/twitter.png);
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .footer .nav_logo {
+    display: none;
+  }
+  .footer .social {
+    margin: 20px 0;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

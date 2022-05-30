@@ -1,0 +1,108 @@
+.market {
+  background-image: url(../../img/bg_mr.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+  margin-bottom: 50px;
+}
+
+.market_info {
+  margin: 310px 0 120px 320px;
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.btn, .filter .btn_filter {
+  background-color: transparent;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 6px 50px;
+  border: 2px solid #F4A937;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn:hover, .filter .btn_filter:hover {
+  background-color: #F4A937;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 10px;
+}
+
+.filter .btn_filter {
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 4px 8px;
+}
+
+.arrow_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .market {
+    margin-bottom: 30px;
+  }
+  .market_info {
+    margin: 200px 20px 10px 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .market {
+    margin-bottom: 20px;
+  }
+  .market_info {
+    margin: 150px 20px 0 20px;
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .market {
+    margin-bottom: 10px;
+    background-image: none;
+  }
+  .market_info {
+    margin: 80px 20px 0 20px;
+    font-size: 32px;
+  }
+  .arrow_container {
+    display: none;
+  }
+}
+/*# sourceMappingURL=market.css.map */

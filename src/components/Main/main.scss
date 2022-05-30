@@ -1,0 +1,118 @@
+.main{
+    background-image: url(../../img/bg_main.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    margin-bottom: 100px;
+    .banner{
+        margin-top: 240px;
+        padding: 40px 80px 40px 50px;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        color: white;
+        font-size: 20px;
+        &_info{
+            font-size: 40px;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+}
+
+.btn{
+    cursor: pointer;
+    background-color: transparent;
+    width: max-content;
+    padding: 6px 50px;
+    border: 2px solid #F4A937;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    &:hover{
+        background-color: #F4A937;
+        transition: 0.5s;
+    }
+}
+
+.arrow{
+    width: 40px;
+    height: 40px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-image: url(../../img/arrow.png);
+    animation-name: trans;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes trans {
+    0% {transform: translate(0px, 20px);}
+    50% {transform: translate(0px, 0px);}
+    100% {transform: translate(0px, 20px);}
+}
+
+.main_catalog{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.container_btn{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    .main{
+        margin-bottom: 80px;
+        .banner{
+            margin-top: 180px;
+        }
+    }
+    .arrow{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main{
+        margin-bottom: 50px;
+        background-image: none;
+        .banner{
+            margin-top: 100px;
+            margin: 120px 20px 20px 20px;
+            padding: 30px;
+            &_info{
+                font-size: 34px;
+            }
+        }
+    }
+    .arrow{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main{
+        margin-bottom: 10px;
+        .banner{
+            margin-top: 80px;
+            text-align: center;
+        }
+    }
+    .arrow{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
